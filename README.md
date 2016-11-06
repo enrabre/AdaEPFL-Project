@@ -30,24 +30,13 @@ etc.
 		
 ### Feasibility and Risks: 
 
-Evaluation of technological and system requirements (type, availability, quality of)
-Evaluation of legal requirements
-Evaluation of operational requirements
-Evaluation of economic requirements
-Evaluation of requirements related to the schedule
-Data sources/
-Methods of data processing, analyzing, visualizing software
-Rules of publishing and using data, software and methods
-level of knowledge and skills necessary for data acquisition, and later to process, analyze and visualize them, as well as to implement the results
-the cost of data, the cost of employing workforce for specific tasks,  the cost of possible improvement of qualifications of the workforce employed. 
+Feasibilities:
+Tweets are popular and well known, therefore it should be easy to find help about how to deal with them. Our dataset should be quite clean, as it comes from an API. For data processing and analyzing, we will use API’s installed in the cluster.
 
 
-estimation of time necessary to complete respective parts of a project
-
-Risks: 
-Provide efficient classifier to distinguish between real-world events and non-event ‘space’, in other words - ability to detect read events from the data
-Multilingual (English, French, Italian, German) tweets processing 
-Properly analyze the sentiments (possible tool is http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/ )
+Risks:
+However, this project has also high risks. Detecting event is not a straightforward task, so the challenge will be to provide an efficient classifier to distinguish real events from non-event ‘space’, in other words - ability to detect events from the data. We are still not sure which methods will work with our dataset. 
+The dataset could be another issue, as Switzerland is a small country and Twitter is not used by the whole population, we could lack data to do proper analysis. Switzerland is also a multilingual country (french, german, italian). Therefore it will be a challenge to make a classifier which take this into account.
 
 ### Deliverables:
 
