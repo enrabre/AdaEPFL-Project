@@ -14,9 +14,13 @@ The format of already collected tweets could be json or already extracted fields
 In case collected data has json format what we expect to get is next: 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;210 000  - approximate number of Twitter users in Swiss (2010)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012-2016 - 5*365 - approximate days of use 1825
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In case of JSON tweets format we expect to get in worst case 12-13k of symbols (see example response -https://dev.twitter.com/rest/reference/get/search/tweets) i.e. 11KB
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Representing roughly, people do 1 tweet daily => 210000*1825*11 = 4 215 750 MB
+
 Of course not all people who have an account are active Twitter users. So size of 4 215, 75 TB
 could be exaggerated significantly. 
 
