@@ -64,15 +64,21 @@ Finally, a visualization of Switzerland with an event detection in real time cou
 ### Timeplan:
 
 6.11: Project proposal
-20.11: First analysis of the data, first tests with the cluster \n
-1.12: First tests of different techniques to detect events \n
-15.12: Working model to detect events. Decision of how to continue: \n
-       \t In case of very bad results or no working model: Change of techniques \n
-       \t In case of satisfying results: decision between improving the model or starting the secondary objectives. \n
-       \t In case of very good model: start of the secondary objectives. \n
-10.01: Final model decided, visualization started. \n
-20.01: Project finished, starting presentation. \n
-~30.01: Presentation of the project during the Mini-Symposium \n
+
+20.11: First analysis of the data, first tests with the cluster 
+
+1.12: First tests of different techniques to detect events 
+
+15.12: Working model to detect events. Decision of how to continue: 
+       In case of very bad results or no working model: Change of techniques 
+       In case of satisfying results: decision between improving the model or starting the secondary objectives. 
+       In case of very good model: start of the secondary objectives. 
+       
+10.01: Final model decided, visualization started. 
+
+20.01: Project finished, starting presentation. 
+
+~30.01: Presentation of the project during the Mini-Symposium
 
 
 
