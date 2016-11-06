@@ -35,11 +35,13 @@ etc.
 		
 ### Feasibility and Risks: 
 
-Feasibilities:
+**Feasibilities:**
+
 Tweets are popular and well known, therefore it should be easy to find help about how to deal with them. Our dataset should be quite clean, as it comes from an API. For data processing and analyzing, we will use API’s installed in the cluster.
 
 
-Risks:
+**Risks:**
+
 However, this project has also high risks. Detecting event is not a straightforward task, so the challenge will be to provide an efficient classifier to distinguish real events from non-event ‘space’, in other words - ability to detect events from the data. We are still not sure which methods will work with our dataset. 
 The dataset could be another issue, as Switzerland is a small country and Twitter is not used by the whole population, we could lack data to do proper analysis. Switzerland is also a multilingual country (french, german, italian). Therefore it will be a challenge to make a classifier which take this into account.
 
