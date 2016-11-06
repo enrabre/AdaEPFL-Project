@@ -6,7 +6,7 @@ Project proposal : Detecting events (date, location, positive or negative sentim
 
 ### Abstract:
 
-Text mining and analysis are new areas of research that open access to new tools. Linked to the advent of Twitter, a huge amount of data are waiting to be process and analyse. In our project, we will try to process, organise and deduce relation from tweets in Switzerland. Being able to detect events thanks to tweets could lead to label event and maybe highlight causality between place, date,positive or negative sentiment. 
+Text mining and analysis are areas of research that made amazing results these last years. Linked to the advent of Twitter, a huge amount of data are waiting to be process and analyse. In our project, we will try to process, organise and deduce relation from tweets in Switzerland. Being able to detect events thanks to tweets could lead to label event and maybe highlight causality between place, date,positive or negative sentiment. 
 
 ### Data description:
 
