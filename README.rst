@@ -8,7 +8,7 @@ Project proposal : Detecting events (date, location, positive or negative sentim
 Abstract:
 -----------------
 
-Text mining and analysis are areas of research that made amazing results these last years. Linked to the advent of Twitter, a huge amount of data are waiting to be process and analyse. In our project, we will try to process, organise tweets in Switzerland in order to detect events. The end goal of our project is to be able to label event and maybe highlight causality between place, date,positive or negative sentiment. Our biggest challenge will be 
+Text mining and analysis are areas of research that made amazing results these last years. Linked to the advent of Twitter, a huge amount of data are waiting to be process and analyse. In our project, we will try to process, organise tweets in Switzerland in order to detect events. The end goal of our project is to be able to label event and maybe highlight causality between place, date,positive or negative sentiment.
 
 Data description:
 -----------------
@@ -65,25 +65,21 @@ We could make a model able to detect smaller events with less tweets.
 We could then build a model and train it with parts of the data and try to predict the rest of the data. We could then use this model to try to detect event in real time.
 Finally, a visualization of Switzerland with an event detection in real time could be created.
 
-Timeplan:
+Results:
 -----------------
 
-6.11: Project proposal
+We teamed up with another group:
 
-20.11: First analysis of the data, first tests with the cluster 
+- we were in charge of the event detect 
 
-1.12: First tests of different techniques to detect events 
+- they created the visualisation based on our detection
+We based our detection on time series analysis. For every hashtags, we looked for peaks in their time series and stated that an event occured this day if the peak was above the threshold. A peak represented the number of tweets caontaining the specific hashtag.
 
-15.12: Working model to detect events. Decision of how to continue: 
-       In case of very bad results or no working model: Change of techniques 
-       In case of satisfying results: decision between improving the model or starting the secondary objectives. 
-       In case of very good model: start of the secondary objectives. 
-       
-10.01: Final model decided, visualization started. 
+.. image :: threshold.png
+	:width: 10
 
-20.01: Project finished, starting presentation. 
+The location of a detected event was computed using the median of the longitude and latitude of every tweets composing the peak.
 
-~30.01: Presentation of the project during the Mini-Symposium
 
 
 
