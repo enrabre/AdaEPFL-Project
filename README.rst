@@ -34,13 +34,21 @@ This basic strategy supposed that an event could only last one day, however fest
 Finally, the model was improved by removing reccurent event with low frequency. Event like #weekend accures every week and are not real event while #christmas occures every years and should not be removed from the detected events.
 
 Results:
+-----------------
 Our model detected ... different events.
 
 German, Italian and French tweets were correctly located into the different part of Switzerland.
 
-Big event like sport game and local event like the white dinner in Basel were correctly detected. The model was as well able to detect smaller event like conference at the EPFL.
------------------
+Big events like sport games and local events like the white dinner in Basel were correctly detected. The model was, as well, able to detect smaller events, like conferences at the EPFL.
 
+Here the link to the interactive map of the other team: https://symsystem.github.io/ADA_Project/
 
+PLease, find below screenshots of representative example.
 
-
+.. image :: swissMap.png
+	    :width: 10 
+	  
++------------------------+-------------------------+
+| .. image :: result.png |  .. image :: privacy.png|
+|	    :width: 10   |           :width: 10    |
++------------------------+-------------------------+
