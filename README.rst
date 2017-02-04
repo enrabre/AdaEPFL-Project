@@ -43,7 +43,7 @@ Big events like sport games and local events like the white dinner in Basel were
 
 Here the link to the interactive map of the other team: https://symsystem.github.io/ADA_Project/
 
-PLease, find below screenshots of representative example.
+Please, find below screenshots of representative example.
 
 .. image :: images/swissMap.png
 	    :width: 10 
