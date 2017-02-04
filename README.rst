@@ -1,3 +1,6 @@
+.. image:: https://zenodo.org/badge/18669/python-visualization/folium.svg
+   :target: https://zenodo.org/badge/latestdoi/18669/python-visualization/folium
+
 # AdaEPFL-Project
 ADA's project
 
