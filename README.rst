@@ -48,7 +48,7 @@ PLease, find below screenshots of representative example.
 .. image :: images/swissMap.png
 	    :width: 10 
 	  
-+------------------------+-------------------------+
-| .. image :: result.png |  .. image :: privacy.png|
-|	    :width: 10   |           :width: 10    |
-+------------------------+-------------------------+
++-------------------------------+--------------------------------+
+| .. image :: /imagesresult.png |  .. image :: images/privacy.png|
+|	    :width: 10          |           :width: 10           |
++-------------------------------+--------------------------------+
