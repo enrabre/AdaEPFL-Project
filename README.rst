@@ -41,7 +41,7 @@ German, Italian and French tweets were correctly located into the different part
 
 Big event like sport game and local event like the white dinner in Basel were correctly detected. The model was as well able to detect smaller event like conference at the EPFL.
 
-.. image :: result.png
+.. image :: swissMap.png
 	    :width: 10 
 	  
 +------------------------+-------------------------+
