@@ -49,6 +49,6 @@ PLease, find below screenshots of representative example.
 	    :width: 10 
 	  
 +-------------------------------+--------------------------------+
-| .. image :: /imagesresult.png |  .. image :: images/privacy.png|
+| .. image :: images/result.png |  .. image :: images/privacy.png|
 |	    :width: 10          |           :width: 10           |
 +-------------------------------+--------------------------------+
