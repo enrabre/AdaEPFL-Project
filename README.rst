@@ -40,7 +40,9 @@ Our model detected ... different events.
 German, Italian and French tweets were correctly located into the different part of Switzerland.
 
 Big events like sport games and local events like the white dinner in Basel were correctly detected. The model was, as well, able to detect smaller events, like conferences at the EPFL.
-Here the link to the interactive map of the other team: Symeon del Marmol: https://symsystem.github.io/ADA_Project/
+
+Here the link to the interactive map of the other team: https://symsystem.github.io/ADA_Project/
+
 PLease, find below screenshots of representative example.
 
 .. image :: swissMap.png
