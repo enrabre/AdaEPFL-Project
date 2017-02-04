@@ -34,13 +34,17 @@ This basic strategy supposed that an event could only last one day, however fest
 Finally, the model was improved by removing reccurent event with low frequency. Event like #weekend accures every week and are not real event while #christmas occures every years and should not be removed from the detected events.
 
 Results:
+-----------------
 Our model detected ... different events.
 
 German, Italian and French tweets were correctly located into the different part of Switzerland.
 
 Big event like sport game and local event like the white dinner in Basel were correctly detected. The model was as well able to detect smaller event like conference at the EPFL.
------------------
 
-
-
-
+.. image :: result.png
+	    :width: 10 
+	  
++------------------------+-------------------------+
+| .. image :: result.png |  .. image :: privacy.png|
+|	    :width: 10   |           :width: 10    |
++------------------------+-------------------------+
