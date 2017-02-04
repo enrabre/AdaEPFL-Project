@@ -21,14 +21,14 @@ We teamed up with another group:
 - they created the visualisation based on our detection
 We based our detection on time series analysis. For every hashtags, we looked for peaks in their time series and stated that an event occured this day if the peak was above the threshold. A peak represented the number of tweets caontaining the specific hashtag.
 
-.. image :: threshold.png
+.. image :: images/threshold.png
 	:width: 10
 
 The location of a detected event was computed using the median of the longitude and latitude of every tweets composing the peak.
 Several different users should have posted about an event to avoid to detect event created by only one user.
 This basic strategy supposed that an event could only last one day, however festival, election or celebration can go on several days. To catch this information, close events were merged. Two events were judged close if they occured in the same time window.
 
-.. image :: window.png
+.. image :: images/window.png
 	:width: 10
 
 Finally, the model was improved by removing reccurent event with low frequency. Event like #weekend accures every week and are not real event while #christmas occures every years and should not be removed from the detected events.
@@ -45,7 +45,7 @@ Here the link to the interactive map of the other team: https://symsystem.github
 
 PLease, find below screenshots of representative example.
 
-.. image :: swissMap.png
+.. image :: images/swissMap.png
 	    :width: 10 
 	  
 +------------------------+-------------------------+
