@@ -1,9 +1,4 @@
-.. image:: https://zenodo.org/badge/18669/python-visualization/folium.svg
-   :target: https://zenodo.org/badge/latestdoi/18669/python-visualization/folium
-
-# AdaEPFL-Project
-ADA's project
-
+.. topic:: ADA's project
 Project proposal : Detecting events (date, location, positive or negative sentiment)
 
 
