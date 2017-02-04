@@ -1,11 +1,56 @@
-import re 
+import re
+import copy
+
+
 def extract_hashtags(text):
+    '''
+    Extract all the hashtags of a text and return the words attached to the '#' sign in a list.
+    If the text has no hashtag, return an empty list.
+    :param text: A string text in which to find hashtags.
+    :return: A list of String, all in lower characters, which are the words linked to the '#' sign.
+    '''
     ht_list = re.findall(r"#(\w+)", text)
+    # Sometimes ht_list returned a list of empty lists, the next line corrects that.
     non_empty_hts = list(filter((lambda ht: ht != []), ht_list))
-    lowerCharList = [ht.lower() for ht in non_empty_hts]
-    return lowerCharList 
-		
-def isSpecificEventListIllegal(detectedEventDateList):
+    lower_char_list = [ht.lower() for ht in non_empty_hts]
+    return lower_char_list
+
+
+addedHashtagsRowsList = []
+def multiplyHashtagRows(row, columns):
+    '''
+    Examine each row. If there are multiple hashtags, it will return the first one.
+    (so the first one will replace the list of hashtags in the df). Then for all the next ones,
+    it will make a copy of the row in the addedHashtagsRowsList, (in a dictionary format).
+    So this dictionary can in the end be transformed in a DF and added to the original DF.
+    (The speed is increased a lot by doing it this way!)
+    '''
+    htList = row.hashtag
+    if len(htList) > 1:
+        ## Making the dictionary
+        addedHashtag = {}
+        addedHashtag['createdAt'] = row.name #the df index
+        for col in columns:
+            addedHashtag[col] = row[col]
+        ## Copying the dict for each hashtag
+        i = 1
+        while i < len(htList) :
+            deepCopy = copy.deepcopy(addedHashtag)
+            deepCopy['hashtag'] = htList[i]
+            global addedHashtagsRowsList
+            addedHashtagsRowsList.append(deepCopy)
+            i+=1
+    return htList[0] # return the first hashtag
+
+def reset_added_hashtag_rows_list():
+    global addedHashtagsRowsList
+    addedHashtagsRowsList = []
+
+def get_added_hashtag_rows_list():
+    return addedHashtagsRowsList
+
+
+def isSpecificEventListIllegal(detectedEventDateList, max_event_duration, min_duration_before_new_event):
     '''
     Return true if the list of dates contain illegal tupples of events, so if the event is recurrent
     which would mean it is not a real event.
@@ -16,11 +61,11 @@ def isSpecificEventListIllegal(detectedEventDateList):
         '''
         ## Return if the difference is too small to be considered as 2 different events
         def diffIsSmall(timeDiff):  
-            return timeDiff < MAX_DURATION_OF_EVENT
+            return timeDiff < max_event_duration
 
         ## Return true if the difference is not big enough to be an annual event.
         def isDiffSuspect(timeDiff):
-            return timeDiff < MIN_DURATION_BEFORE_NEW_EVENT   
+            return timeDiff < min_duration_before_new_event
 
         diff1 = abs(date1 - date2)
         diff2 = abs(date2 - date3)
