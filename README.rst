@@ -35,7 +35,7 @@ Finally, the model was improved by removing reccurent event with low frequency. 
 
 Results:
 -----------------
-Our model detected ... different events.
+Our model detected 3156 different events.
 
 German, Italian and French tweets were correctly located into the different parts of Switzerland.
 
