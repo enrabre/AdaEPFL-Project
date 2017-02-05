@@ -47,7 +47,8 @@ Our model detected 3156 different events.
 German, Italian and French tweets were correctly located into the different parts of Switzerland. Big events like sport games (football match, tennis match, etc.) and local events (like the "White Dinner" in Basel) were correctly detected. The model was also able to detect smaller events, like some conferences at the EPFL.
 
 Here the link to the interactive map of the team we collaborated with: https://symsystem.github.io/ADA_Project/ .
-|We thank Inês Valentim, Syméon del Marmol and Pierre Colombo for their amazing work on the vizualisation. Here is the link to their github repository: https://github.com/Symsystem/ADA_Project
+
+We thank Inês Valentim, Syméon del Marmol and Pierre Colombo for their amazing work on the vizualisation. Here is the link to their github repository: https://github.com/Symsystem/ADA_Project
 
 Please, find below screenshots of a few examples.
 
